@@ -8,19 +8,9 @@ version = "0.1.0"
 description = "Shared database models for school projects"
 readme = "README.md"
 authors = [
-    {name = "Kirill Nayduk", email = "k.k.nayduk@yandex.ru"},
+    {name = "Your Name", email = "your.email@example.com"},
 ]
 license = {text = "MIT"}
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
-keywords = ["sqlalchemy", "database", "models", "school"]
 dependencies = [
     "sqlalchemy>=2.0.0",
 ]
@@ -29,7 +19,7 @@ requires-python = ">=3.8"
 [project.urls]
 Homepage = "https://github.com/zuox4/shared-models"
 Repository = "https://github.com/zuox4/shared-models.git"
-BugTracker = "https://github.com/zuox4/shared-models/issues"
 
 [tool.setuptools.packages.find]
+where = ["."]
 include = ["shared*"]
