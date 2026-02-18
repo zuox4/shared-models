@@ -18,7 +18,7 @@ class Parent(Base):
     )
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    person_id = Column(Integer, nullable=False)
+    person_id = Column(String(255), nullable=False)
     max_user_id = Column(String(255), nullable=True, unique=True)
 
     # Персональные данные

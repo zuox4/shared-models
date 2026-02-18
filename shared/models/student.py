@@ -20,7 +20,7 @@ class Student(Base):
     )
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    person_id = Column(Integer, nullable=False)
+    person_id = Column(String(255), nullable=False)
     user_name = Column(String(100), nullable=True)
     max_user_id = Column(String(255), nullable=True, unique=True)
 
